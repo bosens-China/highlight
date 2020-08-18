@@ -1,6 +1,6 @@
 {
   "name": "@boses/highlight",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "小程序文字高亮",
   "main": "dist/index.js",
   "repository": {
