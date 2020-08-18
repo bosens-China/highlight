@@ -1,0 +1,8 @@
+.c-cs {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  line-height: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}

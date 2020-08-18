@@ -1,0 +1,5 @@
+<view class="cs-class c-cs" bind:tap="onClick">
+  <text class="cs-class-i {{item === keyWord ? 'cs-class-i-h' : ''}}" style="{{item === keyWord ? 'color:' + color + ';' : ''}}" wx:for="{{arr}}" wx:key="item">
+    {{item}}
+  </text>
+</view>

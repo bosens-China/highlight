@@ -1,0 +1,34 @@
+{
+  "name": "@boses/highlight",
+  "version": "1.0.0",
+  "description": "小程序文字高亮",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bosens-China/highlight.git"
+  },
+  "keywords": [
+    "highlight",
+    "小程序"
+  ],
+  "author": "boses",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bosens-China/highlight/issues"
+  },
+  "homepage": "https://github.com/bosens-China/highlight#readme",
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "typescript": "^3.9.7"
+  },
+  "miniprogram": "dist",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && npm version patch && npm publish --access public"
+  }
+}
