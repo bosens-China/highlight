@@ -34,30 +34,12 @@ Component({
             type: String,
             value: 'red',
         },
-        rootStyle: {
-            type: String,
-        },
-        itemStyle: {
-            type: String,
-            observer: function () {
-                this.getItemSty();
-            },
-        },
     },
     externalClasses: ['cs-class', 'cs-class-i', 'cs-class-i-h'],
     data: {
         arr: [],
-        sty: '',
     },
     methods: {
-        getItemSty: function () {
-            var itemStyle = this.properties.itemStyle;
-            var sty = '';
-            if (itemStyle) {
-                sty += itemStyle;
-            }
-            this.setData({ sty: sty });
-        },
         change: function () {
             var _a = this.properties, data = _a.data, keyWord = _a.keyWord;
             data = "" + (data || '');
