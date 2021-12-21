@@ -1,6 +1,6 @@
 # 小程序文字高亮
 
-!(bg)(/bg.png)
+![bg](/bg.png)
 
 最近经手的一个项目用到了高亮需求，为了下次开发方便就做成了这个库，如果对你有帮助欢迎`star`
 
@@ -41,25 +41,58 @@ npm i @boses/highlight
 
 ### props
 
-| name    | type   | default | describe           |
-| ------- | ------ | ------- | ------------------ |
-| data    | String | none    | 字符串数据         |
-| keyWord | String | none    | 需要被高亮的关键词 |
-| color   | String | red     | 高亮文字的颜色     |
+#### data
+
+- type: `string`
+- required: `true`
+
+字符串数据
+
+#### keyWord
+
+- type: `string`
+- required: `true`
+
+需要被高亮的关键词
+
+#### color
+
+- type: `string`
+- required: `false`
+
+高亮文字的颜色，默认为`red`。
 
 ### class
 
-| name         | describe                |
-| ------------ | ----------------------- |
-| cs-class     | 全局 class 类名         |
-| cs-class-i   | 全局 class 下的子项     |
-| cs-class-i-h | 全局 class 下的高亮子项 |
+#### cs-class
+
+- type: `string`
+- required: `false`
+
+全局 class 类名
+
+#### cs-class-i
+
+- type: `string`
+- required: `false`
+
+全局 class 下的子项
+
+#### cs-class-i-h
+
+- type: `string`
+- required: `false`
+
+全局 class 下的高亮子项
 
 ### 事件
 
-| name  | describe   |
-| ----- | ---------- |
-| click | 被点击触发 |
+#### click
+
+- type: `Function`
+- required: `false`
+
+被点击触发
 
 ## License
 
