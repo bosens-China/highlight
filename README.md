@@ -1,25 +1,27 @@
-# 文字高亮（小程序）
+# 小程序文字高亮
 
-![背景](/bg.png)
+!(bg)(/bg.png)
 
 最近经手的一个项目用到了高亮需求，为了下次开发方便就做成了这个库，如果对你有帮助欢迎`star`
 
-[文章:小程序文字高亮](https://github.com/bosens-China/blog/issues/61)
+> [实现原理](https://github.com/bosens-China/blog/issues/61)
 
 ## 使用方法
 
-1. npm 下载
+### 1. npm 下载
 
 ```sh
 npm i @boses/highlight
 # 小程序工具 -> 构建npm
 ```
 
-2. 拷贝 dist 目录到小程序
+### 2. 拷贝 dist 目录到小程序
 
-## 快速使用
+推荐使用方法 1
 
-- index.json
+## 使用方法
+
+### index.json
 
 ```json
 {
@@ -29,15 +31,15 @@ npm i @boses/highlight
 }
 ```
 
-- index.wxml
+### index.wxml
 
 ```html
 <highlight data="hello wrold" keyWord="wro"></highlight>
 ```
 
-## api 相关
+## Api
 
-- prop
+### props
 
 | name    | type   | default | describe           |
 | ------- | ------ | ------- | ------------------ |
@@ -45,7 +47,7 @@ npm i @boses/highlight
 | keyWord | String | none    | 需要被高亮的关键词 |
 | color   | String | red     | 高亮文字的颜色     |
 
-- class 相关
+### class
 
 | name         | describe                |
 | ------------ | ----------------------- |
@@ -53,9 +55,12 @@ npm i @boses/highlight
 | cs-class-i   | 全局 class 下的子项     |
 | cs-class-i-h | 全局 class 下的高亮子项 |
 
-- 事件相关
-  bind:click 被点击触发
+### 事件
+
+| name  | describe   |
+| ----- | ---------- |
+| click | 被点击触发 |
 
 ## License
 
-MIT
+[MIT](/License)
